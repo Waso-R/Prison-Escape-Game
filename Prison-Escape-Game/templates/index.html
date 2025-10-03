@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome - Jail Break{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <div class="content-container">
+        <h1>Welcome to Jail Break</h1>
+        <p>Outsmart the guards. Escape the prison. Stay alive.</p>
+        {% if g.user %}
+            <a href="{{ url_for('game') }}" class="btn">Play Game</a>
+        {% else %}
+            <a href="{{ url_for('signup') }}" class="btn">Play Game</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %}Attributions{% endblock %}
+
+{% block content %}
+<div class="attributions-container">
+  <h1 class="attributions-title">Image Attributions</h1>
+
+  <p class="attributions-description">
+    These are the sources for all images used in my Jail Break game:
+  </p>
+
+  <div class="attribution-card">
+    <img src="{{ url_for('static', filename='images/background2.jpg') }}" alt="Prisoner Behind Bars" class="attribution-image">
+    <div class="attribution-text">
+      <strong>Prisoner Behind Bars</strong><br>
+      <a href="https://www.stockvault.net/photo/231727/person-behind-bars" target="_blank">
+        stockvault.net/photo/231727/person-behind-bars
+      </a>
+    </div>
+  </div>
+
+  <div class="attribution-card">
+    <img src="{{ url_for('static', filename='images/playerright.png') }}" alt="Player Sprite" class="attribution-image">
+    <div class="attribution-text">
+      <strong>Player Sprite</strong><br>
+      <a href="https://opengameart.org/content/animated-top-down-survivor-player" target="_blank">
+        opengameart.org/content/animated-top-down-survivor-player
+      </a>
+    </div>
+  </div>
+
+  <div class="attribution-card">
+    <img src="{{ url_for('static', filename='images/exit.png') }}" alt="Exit Image" class="attribution-image">
+    <div class="attribution-text">
+      <strong>Exit Image</strong><br>
+      <a href="https://pngimg.com/image/52982" target="_blank">
+        pngimg.com/image/52982
+      </a>
+    </div>
+  </div>
+
+  <div class="attribution-card">
+    <img src="{{ url_for('static', filename='images/cell.png') }}" alt="Prison Walls" class="attribution-image">
+    <div class="attribution-text">
+      <strong>Prison Walls</strong><br>
+      <a href="https://pngimg.com/image/41339" target="_blank">
+        pngimg.com/image/41339
+      </a>
+    </div>
+  </div>
+
+  <div class="attribution-card">
+    <img src="{{ url_for('static', filename='images/police.png') }}" alt="Police Sprite" class="attribution-image">
+    <div class="attribution-text">
+      <strong>Police Sprite</strong><br>
+      <a href="https://www.pngegg.com/en/png-bjtbu/download" target="_blank">
+        pngegg.com/en/png-bjtbu
+      </a>
+    </div>
+  </div>
+
+  <div class="attribution-card">
+    <img src="{{ url_for('static', filename='images/freeze.png') }}" alt="Freeze Power-Up" class="attribution-image">
+    <div class="attribution-text">
+      <strong>Power-Up Icon (Freeze)</strong><br>
+      <a href="https://www.freepik.com/icon/freezing_3778958" target="_blank">
+        freepik.com/icon/freezing_3778958
+      </a>
+    </div>
+  </div>
+
+  <div class="attribution-card">
+    <img src="{{ url_for('static', filename='images/ammo.png') }}" alt="Ammo Power-Up" class="attribution-image">
+    <div class="attribution-text">
+      <strong>Power-Up Icon (Ammo)</strong><br>
+      <a href="https://www.vecteezy.com/png/56789829-bullets-isolated-on-a-transparent-background" target="_blank">
+        https://www.vecteezy.com/png/56789829-bullets-isolated-on-a-transparent-background
+      </a>
+    </div>
+  </div>
+
+  <h1 class="attributions-title">Sound Attributions</h1>
+
+  <p class="attributions-description">
+    These are the sources for all sounds used in my Jail Break game:
+  </p>
+
+  <div class="attribution-card">
+    <div class="attribution-text">
+      <strong>Background Music</strong><br>
+      <a href="https://pixabay.com/music/search/prison/" target="_blank">
+        https://pixabay.com/music/search/prison/
+      </a>
+    </div>
+  </div>
+
+  <div class="attribution-card">
+    <div class="attribution-text">
+      <strong>Gun Shot</strong><br>
+      <a href="https://pixabay.com/sound-effects/search/gun/" target="_blank">
+        https://pixabay.com/sound-effects/search/gun/
+      </a>
+    </div>
+  </div>
+
+  <div class="attribution-card">
+    <div class="attribution-text">
+      <strong>Escaped Sound</strong><br>
+      <a href="https://www.101soundboards.com/sounds/1246381-hey-quandale-dingle-here-i-just-escaped-prison-i-am-staying-at-my-friend-juandale" target="_blank">
+        https://www.101soundboards.com/sounds/1246381-hey-quandale-dingle-here-i-just-escaped-prison-i-am-staying-at-my-friend-juandale
+      </a>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

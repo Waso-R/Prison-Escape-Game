@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Jail Break{% endblock %}
+
+{% block content %}
+<div class="game-page">
+    <div id="gameContainer">
+        
+        <!-- canvas -->
+        <canvas id="canvas"></canvas>
+        
+        <!-- game instruction -->
+        <div class="game-controls-info">
+            <p>P : Pause ---- M : Mute ---- SpaceBar : Shoot</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='game.js') }}"></script>
+{% endblock %}

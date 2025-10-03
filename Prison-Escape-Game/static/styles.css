@@ -1,0 +1,321 @@
+/************************\
+    General Reset 
+\************************/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar { width: 0px; }
+
+
+/************************\
+    base.html 
+\************************/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-brand a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: blue;
+}
+
+.navbar-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.navbar-links a:hover {
+    color: #FF5F1F;
+}
+
+.nav-link.active {
+    color: #FF5F1F;
+    font-weight: bold;
+}
+
+.logout-link {
+    color: #FF5F1F !important;
+    font-weight: bold;
+}
+
+/************************\
+    Index.html 
+\************************/
+
+h1, p {
+    margin: 0;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('../static/images/background2.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF5F1F;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.jumbotron .btn:hover {
+    background-color: grey;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron .btn:active {
+    background-color: grey;
+    transform: translateY(0);
+}
+
+/****************************\
+    Login & Register Pages
+\****************************/
+
+h2.login-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 40px;
+    color: #FF5F1F;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.login-form {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #FF5F1F;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-error {
+    font-size: 0.9rem;
+    color: #d9534f;
+    font-weight: 600;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #FF5F1F;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #222;
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-link p {
+    color: #FF5F1F;
+}
+
+.form-link a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+/****************************\
+        game.html
+\****************************/
+
+.game-page {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+   
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+   
+#canvas {
+    background-color: #222;
+    border: 3px solid #FF5F1F;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 95, 31, 0.5);
+    max-height: 82vh;
+    margin: 0;
+    display: block;
+}
+   
+.game-controls-info {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    background-color: rgba(34, 34, 34, 0.8);
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid #FF5F1F;
+}
+
+.game-controls-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #FF5F1F;
+}
+
+/****************************\
+    attributions.html
+\****************************/
+
+.attributions-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  
+  .attributions-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #FF5F1F;
+  }
+  
+  .attributions-description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .attribution-card {
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+    box-shadow: 0 0 10px rgba(255, 95, 31, 0.2);
+  }
+  
+  .attribution-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #222;
+    padding: 5px;
+  }
+  
+  .attribution-text {
+    flex: 1;
+    color: white;
+  }
+  
+  .attribution-text a {
+    color: #FF5F1F;
+    text-decoration: none;
+  }
+  
+  .attribution-text a:hover {
+    text-decoration: underline;
+  }
